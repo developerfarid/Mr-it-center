@@ -41,7 +41,7 @@
         "id": 4,
         "title": "Open Programming Courses For Everyone Copy",
         "img": "https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/New-Course-03.jpg",
-        "price": "FREE",
+        "price": 10,
         "rating": 4,
         "lesson": 6,
         "enroll": 245,

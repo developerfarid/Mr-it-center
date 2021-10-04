@@ -4,11 +4,13 @@ import Rating from "react-rating";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Button from "@restart/ui/esm/Button";
-const elementEmpty = <FontAwesomeIcon icon={faStar} />;
+import { Link, NavLink } from "react-router-dom";
+const elementEmpty = <FontAwesomeIcon style={{color:"green"}} icon={faStar} />;
 
 const HomeCard = ({ service }) => {
-  const { title, img, price, rating, enroll, catagory, lesson } =
+  const {id ,title, img, price, rating, enroll, catagory, lesson } =
     service;
+  
   return (
     <div className="mb-5">
       <Card className=" h-100">
@@ -18,9 +20,8 @@ const HomeCard = ({ service }) => {
             <span>{catagory}</span> <span className='price'>${price}</span>
           </p>
 
-          <Card.Title>{title}</Card.Title>
+          <Card.Title ><Link className="text-info text-decoration-none" to={`/course/${id}`}>{title}</Link></Card.Title>
           <p className='d-flex justify-content-between'>
-            {" "}
             <Rating
               readonly
               emptySymbol='fa fa-star-o'

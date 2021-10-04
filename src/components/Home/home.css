@@ -1,8 +1,16 @@
-.home {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.home,
+.contact,
+.service,
+.about {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+.contact,
+.service,
+.about {
+  height: 50vh;
 }
 .my-row {
   height: 80vh;
@@ -26,4 +34,18 @@
   text-align: center;
   line-height: 50px;
   font-weight: 500;
+}
+.fa-star-o {
+  color: green;
+}
+
+@media (max-width: 576px) {
+  .my-row h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .my-row p {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }

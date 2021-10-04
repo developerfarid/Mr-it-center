@@ -14,7 +14,7 @@ const Home = () => {
           background: `url(${"https://edusphere.radiantthemes.com/wp-content/uploads/2020/07/Banner-home-03-1.jpg"})`,
         }}>
         <Container>
-          <Row className=' my-row align-items-center'>
+          <Row xs={1} md={2} className=' my-row align-items-center'>
             <Col>
               <h1>Embark On An Ambitious Path With EduSphere Ideas</h1>
               <p>
@@ -31,21 +31,21 @@ const Home = () => {
       <Container>
         <Row className='my-4'>
           <Col>
-            <div class='card mb-3'>
-              <div class='row g-0'>
-                <div class='col-md-2 pt-4 ps-4'>
+            <div className='card mb-3'>
+              <div className='row g-0'>
+                <div className='col-md-2 pt-4 ps-4'>
                   <img
                     src={
                       "https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/Books-and-library.png"
                     }
-                    class='img-fluid rounded-start'
+                    className='img-fluid rounded-start'
                     alt='...'
                   />
                 </div>
-                <div class='col-md-10'>
-                  <div class='card-body'>
-                    <h5 class='card-title'>Books And Library</h5>
-                    <p class='card-text'>
+                <div className='col-md-10'>
+                  <div className='card-body'>
+                    <h5 className='card-title'>Books And Library</h5>
+                    <p className='card-text'>
                       Innovating new ideas via scientific learning process
                     </p>
                   </div>
@@ -54,9 +54,9 @@ const Home = () => {
             </div>
           </Col>
           <Col>
-            <div class='card mb-3'>
-              <div class='row g-0'>
-                <div class='col-md-2  pt-4 ps-4'>
+            <div className='card mb-3'>
+              <div className='row g-0'>
+                <div className='col-md-2  pt-4 ps-4'>
                   <img
                     src={
                       "https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/Professional-educator.png"
@@ -64,10 +64,10 @@ const Home = () => {
                     alt='...'
                   />
                 </div>
-                <div class='col-md-10'>
-                  <div class='card-body'>
-                    <h5 class='card-title'>Professional Educator</h5>
-                    <p class='card-text'>
+                <div className='col-md-10'>
+                  <div className='card-body'>
+                    <h5 className='card-title'>Professional Educator</h5>
+                    <p className='card-text'>
                       Education is the key to prosperity among the youth
                     </p>
                   </div>
@@ -76,9 +76,9 @@ const Home = () => {
             </div>
           </Col>
           <Col>
-            <div class='card mb-3'>
-              <div class='row g-0'>
-                <div class='col-md-2  pt-4 ps-4'>
+            <div className='card mb-3'>
+              <div className='row g-0'>
+                <div className='col-md-2  pt-4 ps-4'>
                   <img
                     src={
                       "https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/Focus-on-achievement.png"
@@ -86,10 +86,10 @@ const Home = () => {
                     alt='...'
                   />
                 </div>
-                <div class='col-md-10'>
-                  <div class='card-body'>
-                    <h5 class='card-title'>Focus On Achievement</h5>
-                    <p class='card-text'>
+                <div className='col-md-10'>
+                  <div className='card-body'>
+                    <h5 className='card-title'>Focus On Achievement</h5>
+                    <p className='card-text'>
                       Innovating new ideas via scientific learning process
                     </p>
                   </div>
@@ -98,10 +98,16 @@ const Home = () => {
             </div>
           </Col>
               </Row>
-              <Row xs={2} md={3} lg={3}>
+              <Row className="offset-2 py-5">
+                <Col md={8} className="text-center">
+                    <h1>Professional Online Courses</h1>
+                    <p>Offering miscellaneous courses and online programs for fresh university graduates or college pass outs that want to pursue an aspiring career.</p>
+                </Col>
+            </Row>
+              <Row xs={1} md={2} lg={3}>
                   {
                     // eslint-disable-next-line no-undef
-                    courses.slice(0, 3).map(service => <HomeCard service={service} />)
+                    courses.slice(0, 3).map(service => <HomeCard key={Math.random()} service={service} />)
                     
                   }
               </Row>
