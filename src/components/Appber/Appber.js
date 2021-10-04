@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Appber = () => {
   return (
     <>
       <Navbar className="fixed-top bg-light"  expand='lg'>
         <Container>
-          <Navbar.Brand className=' text-info fs-2' to='/home'>
+          <Link className=' text-decoration-none text-info fs-2' to='/home'>
             MR IT
-          </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto '>

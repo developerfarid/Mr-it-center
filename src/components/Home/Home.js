@@ -5,6 +5,7 @@ import HomeCard from "../HomeCard/HomeCard";
 import "./home.css";
 
 const Home = () => {
+  // use context api 
     const courses = useContext(courseContext)
   return (
     <>
@@ -29,7 +30,7 @@ const Home = () => {
         </Container>
       </div>
       <Container>
-        <Row className='my-4'>
+        <Row className='my-4' xs={1} md={2} lg={3}>
           <Col>
             <div className='card mb-3'>
               <div className='row g-0'>

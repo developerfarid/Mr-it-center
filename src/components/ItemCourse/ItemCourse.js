@@ -7,14 +7,17 @@ import { courseContext } from '../../App';
 
 
 const ItemCourse = () => {
-    const course= useContext(courseContext)
+    // use context api
+    const course = useContext(courseContext)
+    // use hook use params
     const { id } = useParams()
-
+// find only data 
     const findItem = course.find(item => item?.id === Number(id))
     return (
         <div className="mt-5 pt-5">
             <Container>
                 <Row>
+                    {/* information */}
                     <Col md={8} xs={12} className="p-md-5">
                         <div className="item-text">
                             <h3 className="mb-5">{findItem?.title}</h3>
@@ -23,6 +26,7 @@ const ItemCourse = () => {
                             <p>{findItem?.description }</p>
                         </div>
                     </Col>
+                    {/* card */}
                     <Col md={4} xs={12}>
                         <div className=" mt-5 card-item text-white ">
                             <p className="bg-info fw-bold fs-4 p-3 d-flex justify-content-between"><span>Course Value</span><span>${findItem?.price}</span></p>

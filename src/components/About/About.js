@@ -16,8 +16,8 @@ const About = () => {
         }}>
         <Container>
         <Row className=' service-row align-items-center text-white'>
-          <Col>
-            <h6>ABOUT US</h6>
+          <Col className="pt-4">
+            <h6  className="pt-4">ABOUT US</h6>
             <h1>Inspiring Bright Minds</h1>
           </Col>
           <></>
@@ -33,7 +33,7 @@ const About = () => {
           </Col>
           <Col>
             <div className="about-text">
-              <h6>ABOUT US</h6>
+              <h6 className="mt-5">ABOUT US</h6>
               <h2>Limitless Learning And Get More Possibilities</h2>
               <p>We specialize in providing professional & practical support to international students looking for admission at some of the most deemed universities across the globe.
                 Have successfully placed over 3500 students in some of the reputable universities across the US.</p>
@@ -46,7 +46,7 @@ const About = () => {
         <Row className="py-5">
           <h5>OUR PHILOSOPHY</h5>
           <h3>We Believe In Our Good Education And Development System And We Know How To Work Together To Reach Greater Success.</h3>
-          <Row className="my-5">
+          <Row xs={1} md={2} lg={4} className="my-5">
             {
               philo.map((item, i)=> <PhiloCard key={i} item={item} />)
             }

@@ -11,18 +11,17 @@ const Contact = () => {
           background: `url(${"https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/Contact-02-banner.jpg"})`,
               }}>
               <Container>
-          <Row className=' service-row align-items-center text-white'>
+          <Row md={2} xs={1} className=' service-row align-items-center text-white'>
                         <Col>
                           <h1>Are You Interested In Online Learning? Contact Us.</h1>
                           <p>Contact our top-notch educationalist in the UK that has huge expertise in providing futuristic solutions to all aspiring students coming for higher education.</p>
               
             </Col>
-            <Col></Col>
           </Row>
         </Container>
         </div>
       <Container>
-        <Row className=" mt-5 align-items-center">
+        <Row xs={1} md={2} className=" mt-5 align-items-center">
                   <Col>
             <Card className="text-center  border-0  p-3">
               <Card.Img className="img-fluid m-auto my-card" variant='top' src={"https://edusphere.radiantthemes.com/wp-content/uploads/2020/08/Contact.png"} />

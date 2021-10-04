@@ -22,6 +22,7 @@ function App() {
         fetch("./fakeData.json").then(res=> res.json()).then(data=> setService(data))
     }, [])
   return (
+    // router cpontext api
     <courseContext.Provider value={service}>
       <Router>
         <Appber></Appber>

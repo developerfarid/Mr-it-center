@@ -7,7 +7,7 @@ const PhiloCard = ({ item }) => {
 
     const {title, des, img}=item
     return (
-        <Col>
+        <Col className="mb-4">
             <div className="philo-card position-relative">
                 <div className="img-div">
                 <img className="img-fluid" src={img} alt="" />
