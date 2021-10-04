@@ -1,11 +1,56 @@
 import logo from './logo.svg';
 import './App.css';
+import NotFound from './components/NotFound/NotFound';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Service from './components/Service/Service';
+import Contact from './components/Contact/Contact';
+import Appber from './components/Appber/Appber';
+import Footer from './components/Footer/Footer';
+import { createContext, useEffect, useState } from 'react';
+
+export const courseContext= createContext()
 
 function App() {
+  const [service, setService] = useState([])
+    useEffect(() => {
+        fetch("./fakeData.json").then(res=> res.json()).then(data=> setService(data))
+    },[])
   return (
-    <div className="App">
-     <h1>ok</h1>
-    </div>
+    <courseContext.Provider value={service}>
+      <Router>
+        <Appber></Appber>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route exact path="/service">
+            <Service></Service>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
+          </Route>
+         
+        </Switch>
+        <Footer />
+      </Router>
+    </courseContext.Provider>
   );
 }
 

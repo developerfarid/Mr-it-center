@@ -1,0 +1,29 @@
+.home {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.my-row {
+  height: 80vh;
+}
+.my-row h1 {
+  color: #222222;
+  font-size: 48px;
+  font-weight: 700;
+}
+.my-row p {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+}
+.price {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+}
