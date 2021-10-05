@@ -1,0 +1,35 @@
+.logo {
+  color: rgb(234, 4, 255);
+}
+
+.my-nav {
+  background-color: rgb(234, 4, 255);
+  padding: 10px 25px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 5px;
+}
+.my-nav::after {
+  position: absolute;
+  content: "";
+  width: 200%;
+  height: 0%;
+  transform-origin: top;
+  left: 0%;
+  top: 0;
+  z-index: -1;
+  background-color: rgb(15, 117, 251);
+  transition: all 0.3s linear;
+}
+.my-nav:hover::after {
+  height: 200%;
+}
+.my-nav:hover {
+  color: white;
+}

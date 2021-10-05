@@ -35,7 +35,7 @@ const ItemCourse = () => {
                                 <p className=" px-2 d-flex justify-content-between"><span>Video Lesson: <b>{findItem?.time }</b> Hours</span><span><i className="fas fa-hourglass-end"></i></span></p>
                                 <p className=" px-2 d-flex justify-content-between"><span>Lectures: <b>{findItem?.lesson }</b></span><span><i className="fas fa-assistive-listening-systems"></i></span></p>
                                 <p className=" px-2 d-flex justify-content-between"><span>Level: <b>{findItem?.lavel}</b></span><span><i className="fas fa-balance-scale-left"></i></span></p>
-                                <Button className="w-100 text-white fw-normal btn btn-info">BUY THIS COURSE</Button>
+                                <Button  className="w-100 text-white fw-normal btn btn-info">BUY THIS COURSE</Button>
                             </div>
                         </div>
                     </Col>

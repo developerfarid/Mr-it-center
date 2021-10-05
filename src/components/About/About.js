@@ -25,10 +25,10 @@ const About = () => {
       </Container>
       </div>
       <Container>
-        <Row className="align-items-center py-5 mt-5">
+        <Row xs={1} md={2}  className="align-items-center py-5 mt-5">
           <Col>
             <div className="about-img border-5">
-              <img src={"https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/About-01.jpg"} alt="" />
+              <img className="img-fluid" src={"https://edusphere.radiantthemes.com/wp-content/uploads/2020/06/About-01.jpg"} alt="" />
             </div>
           </Col>
           <Col>

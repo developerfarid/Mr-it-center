@@ -10,7 +10,7 @@ const Footer = () => {
                 <Row xs={1} md={2} lg={4}>
                     <Col>
                         <div className="footer-item">
-                            <h2>MR IT</h2>
+                            <h2 className="logo">MR IT</h2>
                             <p>A premier educational consultant & institution focussing on providing quality learning to university students aspiring for a bright career.</p>
                         </div>
                     </Col>
